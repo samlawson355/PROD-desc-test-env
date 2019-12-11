@@ -1,0 +1,631 @@
+body {
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+a {
+  color: #0066c0;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+#productDescriptionContainerS {
+  display: flex;
+  flex-direction: column;
+}
+
+#titleOfProductContainerS {
+  height: auto;
+  font-size: 1.3em;
+}
+
+#titleOfProductS {
+  vertical-align: middle;
+}
+
+#theWordByS {
+  font-size: smaller;
+}
+
+#productMakerS {
+  cursor: pointer;
+}
+
+#starsContainerS {
+  cursor: pointer;
+  font-size: small;
+}
+
+#numberOfRatingsS {
+  cursor: pointer;
+  font-size: small;
+}
+#theLineS {
+  font-size: small;
+  color: gray;
+}
+
+#numOfQuestionsAnsweredS {
+  cursor: pointer;
+  font-size: small;
+}
+
+#starsRatingsQuestionsContainerS {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 300px;
+}
+
+#productPriceContainerS {
+  height: 20px;
+}
+
+#theWordPriceS {
+  vertical-align: top;
+  font-size: smaller;
+  color: #555;
+}
+
+#productPriceS {
+  vertical-align: top;
+  font-size: 1.1em;
+  color: #b12704;
+}
+
+#shippingInfoUnderPriceS {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: smaller;
+}
+
+#flagAndDealsContainerS {
+  display: flex;
+  justify-content: left;
+}
+
+#textFlagDealContainerS {
+  width: 70%;
+  margin-left: 0%;
+  justify-content: space-evenly;
+}
+
+#dealContainerS {
+  display: inline;
+  padding-left: 10px;
+  font-size: smaller;
+  vertical-align: bottom;
+}
+
+#flagHolderS {
+  vertical-align: bottom;
+  width: 50px;
+}
+
+#orangeFlagS {
+  border-top: 2px solid #eda93a;
+  border-bottom: 2px solid #eda93a;
+  border-left: 4px solid #eda93a;
+  border-right: 4px solid #eda93a;
+  border-radius: 3px;
+  font-size: small;
+  color: white;
+  background-color: #eda93a;
+}
+
+#theWordChoiceS {
+  color: #eda93a;
+}
+
+#blackFlagS {
+  background-color: #232f3e;
+  color: white;
+  font-size: small;
+  border-bottom: 1px solid #232f3e;
+  border-top: 3px solid #232f3e;
+  border-left: 7px solid #232f3e;
+  border-right: 7px solid #232f3e;
+}
+
+#theTriangleS {
+  font-size: 0%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #232f3e;
+  border-right: 10px solid transparent;
+  vertical-align: bottom;
+}
+
+#textAfterBlackFlagS {
+  color: #888;
+  font-size: smaller;
+}
+
+#grayLineDividerS {
+  padding-top: 3px;
+  border-bottom: dotted 0.5px rgb(218, 218, 218);
+}
+
+#shipsFromS {
+  padding-top: 5px;
+  font-size: small;
+}
+
+#wantItByS {
+  padding-top: 5px;
+}
+
+#giveDateS {
+  float: left;
+  font-size: small;
+  font-weight: 900;
+  padding-right: 4px;
+}
+
+#orderByS {
+  font-size: small;
+}
+#countdownTimerS {
+  color: #007600;
+  font-weight: 900;
+}
+#productDescriptionLineContainerS {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: left;
+}
+
+#productDescriptionLineContainerS ul,
+#productDescriptionLineContainerS li {
+  padding-inline-start: 20px;
+}
+
+#starDropDownContainerS {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+  margin-top: 7px;
+  position: absolute;
+  z-index: 100;
+  /* margin-left: -160px; */
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  height: 300px;
+  width: 400px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.6);
+}
+#innerStarDropdownContainerS {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#starsInsideDropdownS {
+  float: left;
+}
+
+#ratingInsideDropdownS {
+  float: right;
+  margin-left: 10px;
+  font-weight: 900;
+}
+
+#itemInStockS {
+  color: #007600;
+  font-size: large;
+}
+
+#itemNotInStockS {
+  color: red;
+  font-size: large;
+}
+
+.productDescriptionLineS {
+  color: black;
+  font-size: smaller;
+  padding-bottom: 4px;
+}
+
+#reportButtonContainerS {
+  display: flex;
+  width: 100%;
+  font-size: smaller;
+}
+
+#talkBubbleS {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid blue;
+  border-radius: 2px;
+  margin-top: 2.5px;
+}
+
+#reportModalComponentS {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#underReportBackgroundS {
+  position: relative;
+  z-index: 1;
+  margin-top: -70vh;
+  width: 95vw;
+  height: 130vh;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+#reportModalContainerS {
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 40vw;
+  z-index: 9999;
+  width: 300px;
+  height: 350px;
+}
+
+#innerReportModalContainerS {
+  display: flex;
+  position: relative;
+  z-index: 10000;
+  border: 1px solid rgba(226, 226, 226, 0.5);
+  border-radius: 4px;
+  width: 101%;
+  height: 100%;
+  background-color: white;
+  font-size: smaller;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.6);
+}
+
+#topBarOfReportModalS {
+  font-weight: 900;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  position: absolute;
+}
+
+#reportIssueS {
+  padding-left: 5%;
+  margin-top: 2.5%;
+  font-weight: 900;
+}
+
+#reportBoxXS {
+  padding-right: 5%;
+  margin-top: 2.7%;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#centerReportModalS {
+  padding-left: 5%;
+  position: relative;
+  margin-top: 20%;
+}
+
+#tellUsIssueReportS {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+#dropDownReportModalS {
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid gray;
+  margin-top: 5px;
+  width: 270px;
+  height: 30px;
+  border-radius: 3px;
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+}
+
+#dropDownReportModalS:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(199, 199, 199, 0.936) 0%,
+    rgba(207, 207, 207, 0.605) 79%
+  );
+}
+
+#dropDownReportModalS:hover #dropDownReportModalContentS {
+  display: block;
+}
+
+#dropDownReportModalContentS {
+  display: none;
+  z-index: 5000;
+  position: absolute;
+  margin-top: 30px;
+  background-color: white;
+  border: 2px solid rgb(184, 181, 181);
+  width: 270px;
+  height: 135px;
+  border-radius: 4px;
+}
+
+.dropDownItemS {
+  font-size: small;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.dropDownItemS:hover {
+  border: 1px solid rgb(143, 143, 143);
+  background-color: rgb(204, 204, 204);
+}
+
+#whichPartReportS {
+  margin-top: 7.5px;
+  padding-left: 3%;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+.downArrowS {
+  height: 0.1px;
+  border: solid rgb(95, 95, 95);
+  border-width: 0 3px 3px 0;
+  margin-bottom: 11px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#dropDownIssueReportModalS {
+  position: relative;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  border: 1px solid gray;
+  margin-top: 5px;
+  width: 270px;
+  height: 30px;
+  border-radius: 3px;
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 0.9360119047619048) 0%,
+    rgba(255, 255, 255, 0.6054796918767507) 79%
+  );
+}
+
+#dropDownIssueReportModalS:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(199, 199, 199, 0.936) 0%,
+    rgba(207, 207, 207, 0.605) 79%
+  );
+}
+
+#dropDownIssueReportModalContentS {
+  display: none;
+  z-index: 5001;
+  position: absolute;
+  margin-top: 30px;
+  background-color: white;
+  border: 2px solid rgb(184, 181, 181);
+  width: 100%;
+  height: 85px;
+  border-radius: 4px;
+}
+
+#dropDownIssueReportModalS:hover #dropDownIssueReportModalContentS {
+  display: block;
+}
+
+#issueReportS {
+  margin-top: 7.5px;
+  padding-left: 3%;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+#commentsReportModalS {
+  padding-top: 5px;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+#reportCommentFieldS {
+  width: 265px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  box-shadow: inset 0.5px 0.5px rgba(68, 68, 68, 0.6);
+}
+
+#thatIFromReportS {
+  padding-top: 8px;
+  margin-left: 5px;
+  float: left;
+  font-size: medium;
+  font-weight: 900;
+  color: rgb(14, 181, 247);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#reportDisclaimerS {
+  width: 250px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+#submitReportButtonS {
+  float: right;
+  margin-top: 10%;
+  border: 1px solid #846a29;
+  border-radius: 3px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 1.2em;
+  height: 30px;
+  width: 65px;
+  cursor: pointer;
+  background: linear-gradient(
+    0deg,
+    rgba(233, 187, 36, 0.936) 0%,
+    rgba(255, 228, 138, 0.936) 79%
+  );
+}
+
+#dealDropdownOuterContainerS {
+  z-index: 1000;
+  position: absolute;
+}
+
+#outerDealDropdownBoxS {
+  opacity: 1;
+  animation-name: fadeOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+  margin-top: 10px;
+  border: 2px solid rgb(207, 207, 207);
+  border-radius: 4px;
+  height: 150px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.6);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#buy5Save5S {
+  font-weight: 900;
+  margin-bottom: -12px;
+}
+
+#dealTextContainerS {
+  padding-left: 40px;
+  width: 75%;
+}
+
+#outerLearnMoreModalContainerS {
+  margin-top: -850px;
+  margin-left: -500px;
+  position: absolute;
+  z-index: 2001;
+  width: 400px;
+  height: 600px;
+  border-radius: 4px;
+  border: 100vh solid rgb(0, 0, 0, 0.3);
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#innerLearnMoreModalContainerS {
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 2px solid rgba(226, 226, 226, 0.5);
+  border-radius: 4px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+#topBarLearnMoreS {
+  font-weight: 900;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213) 0%,
+    rgba(255, 255, 255) 79%
+  );
+  width: 100%;
+  height: 6%;
+  border-bottom: 1px solid gray;
+  position: absolute;
+}
+
+#innerLearnMoreS {
+  margin-top: 40px;
+  padding-left: 5%;
+  margin-right: 10px;
+}
+
+#innerLearnMoreS ul,
+#innerLearnMoreS li {
+  padding-inline-start: 15px;
+  padding-bottom: 6px;
+}
+
+#learnMoreHowS {
+  padding-left: 5%;
+  margin-top: 2.5%;
+  font-weight: 900;
+}
+
+#learnMoreXS {
+  padding-right: 5%;
+  margin-top: 2.3%;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#promoDetailsLearnMoreS {
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.MuiRating-root {
+  margin-left: -3px;
+}
