@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack -d --watch & live-server --port=9000 --watch=dist --open=dist",
-    "build": "webpack -p"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
