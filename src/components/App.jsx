@@ -10,24 +10,24 @@ class App extends React.Component {
     };
     this.selectProduct = this.selectProduct.bind(this);
   }
-  randomPicker() {
-    let arr = [];
-    for (let i = 1; i < 100; i++) {
-      arr.push(i);
-    }
-    let num = ~~(Math.random() * arr.length);
-    return num;
-  }
+  // randomPicker() {
+  //   let arr = [];
+  //   for (let i = 1; i < 100; i++) {
+  //     arr.push(i);
+  //   }
+  //   let num = ~~(Math.random() * arr.length);
+  //   return num;
+  // }
 
-  componentDidMount() {
-    let num = this.randomPicker();
-    this.selectProduct(num);
-  }
+  // componentDidMount() {
+  //   let num = this.randomPicker();
+  //   this.selectProduct(num);
+  // }
 
   selectProduct(event) {
     axios
       .get(
-        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event}`,
+        `http://node-express-env.pd2fd7phmh.us-east-2.elasticbeanstalk.com/api/${event.target.value}`,
         {
           headers: {
             "Access-Control-Allow-Origin": "*"
@@ -93,7 +93,13 @@ class App extends React.Component {
   // }
 
   render() {
-    return <Description currentProduct={this.state.currentProduct} />;
+    return !this.state.currentProduct ? (
+      <button onClick={this.selectProduct} value="70">
+        Click for products
+      </button>
+    ) : (
+      <Description currentProduct={this.state.currentProduct} />
+    );
   }
 }
 
