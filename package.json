@@ -7,7 +7,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "webpack -d --watch & live-server --port=9000 --watch=dist --open=dist",
+    "start": "nodemon server/index.js",
+    "react-dev": "webpack -d --watch",
     "build": "webpack -p"
   },
   "devDependencies": {
