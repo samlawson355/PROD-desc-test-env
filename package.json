@@ -5,20 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack -d --watch & live-server --port=9000 --watch=dist --open=dist",
-    "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davidsilva2841/navbar.git"
+    "build": "webpack -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/davidsilva2841/navbar/issues"
-  },
-  "homepage": "https://github.com/davidsilva2841/navbar#readme",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
